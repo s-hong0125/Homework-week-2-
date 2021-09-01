@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    
+    font-family:'Source Sans Pro';
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+section {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34485f;
+    padding: 8px 12px;
+}
+
+.navbar__logo{
+    font-size: 30px;
+}   
+.navbar__logo i{
+    color:cyan;
+}
+
+.navbar__menu{
+display: flex;
+list-style:none;
+padding-left:0;
+}
+
+.navbar__menu li{
+    padding:8px 12px;
+}
+
+.navbar__menu li:hover {
+    background-color: rosybrown;
+    border-radius: 3px;
+}
+.navbar__icons{
+    list-style: none;
+    color: white;
+    display: flex; 
+    padding-left:0;
+     
+}
+
+.navbar__icons li{
+    padding: 8px 12px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar__menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+    }
+    .navbar__icons{
+        justify-content: center;
+        width: 100%;
+    }
+       
+
+        
+
+}
